@@ -75,16 +75,16 @@ $$
 Con el modelo ajustado y el costo $c$, el precio elegido es
 
 $$
-p^\* = \arg\max_{p \ge c} \; (p - c)\,\sigma(a + b p),
+p^{\star} = \arg\max_{p \ge c} \; (p - c)\,\sigma(a + b p),
 $$
 
 que se busca por sección dorada en $[c,\; c + 40/|b|]$. La función tiene un único máximo, así que la sección dorada es suficiente y no necesita derivadas. Para validarla existe la solución cerrada: con $k = -b$, la condición de primer orden lleva a $u e^u = e^{a - kc - 1}$ con $u = k(p - c) - 1$, y entonces
 
 $$
-p^\* = c + \frac{1 + W\!\left(e^{a - kc - 1}\right)}{k},
+p^{\star} = c + \frac{1 + W\!\left(e^{a - kc - 1}\right)}{k},
 $$
 
-con $W$ la rama principal de la función de Lambert. Para $a = 1$, $b = -1$, $c = 0$ da $p^\* = 1 + \Omega \approx 1{,}5671$.
+con $W$ la rama principal de la función de Lambert. Para $a = 1$, $b = -1$, $c = 0$ da $p^{\star} = 1 + \Omega \approx 1{,}5671$.
 
 ## Pruebas
 
