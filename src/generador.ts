@@ -1,5 +1,5 @@
 import { Prng } from "./prng.ts";
-import type { Equipo, Licitacion } from "./tipos.ts";
+import type { Equipo, Licitacion, Mochila } from "./tipos.ts";
 
 const HABILIDADES = ["ingenieria", "datos", "legal", "finanzas", "terreno", "software"];
 
@@ -49,7 +49,7 @@ export function generarCartera(semilla: number, o: OpcionesInstancia): { licitac
 }
 
 /** Mochila multidimensional aleatoria directa, para pruebas contra fuerza bruta. */
-export function generarMochila(semilla: number, n: number, m: number): import("./tipos.ts").Mochila {
+export function generarMochila(semilla: number, n: number, m: number): Mochila {
   const r = new Prng(semilla);
   const peso = Array.from({ length: m }, () => Array.from({ length: n }, () => r.entero(0, 30)));
   return {
